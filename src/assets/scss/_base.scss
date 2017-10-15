@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0 auto;
+  //font: 14px/1.5 "Microsoft Yahei","微软雅黑","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  font: 14px/1.5 "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+textarea {
+  resize: none;
+}
+input,button {
+  outline: 0;
+  &:focus {
+	outline: 0;
+  }
+}
+ul,ol{
+  padding: 0;
+  margin: 0px;
+  li {
+	list-style: none;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+	text-decoration: none;
+	color:inherit;
+  }
+  &:focus {
+	@extend a:hover;
+	outline: none;
+  }
+}
+img {
+  vertical-align: middle;
+}
+//.clearfix::after { display: block; clear: both; content: ""; }
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+//.clearfix{*+height:1%;}
+.clear {
+  clear: both;
+}
+
+
+.omit {
+  display: inline-block;
+  max-width: 100%;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

@@ -1,0 +1,19 @@
+.tag {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background:  no-repeat center;
+  background-size: cover;
+
+}
+.tag-spicy {
+  width: 16px;
+  height: 18px;
+  background-image: url("../images/spicy.png");
+}
+.tag-zan {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/zan.png");
+  background-size: 85% auto;
+}

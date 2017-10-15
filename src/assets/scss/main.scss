@@ -1,0 +1,232 @@
+@import "base";
+@import "tag";
+
+
+body {
+  font-size: 14px;
+}
+
+.search-buoy__wrap {
+  position: fixed;
+  z-index: 3;
+  top: 15px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background: rgba(#000,.3);
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 5%;
+    top:5%;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    background: rgba(#000,.3);
+  }
+  .iconfont {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    color: rgba(#fff,.8);
+  }
+}
+.dcan {
+  position: relative;
+  padding: 25px 12px 40px;
+  background: #f3e5cb;overflow: hidden;
+  .nav-top {
+    display: flex;
+    align-items: center;
+    background: rgba(#fff,.7);
+    border-radius: 3px;
+    //justify-content: center;
+    li {
+      flex: 1;
+      border-left: 1px solid #ebece4;
+      &:first-child {
+        border-left: 0;
+      }
+      //justify-content: center;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      img {
+        width: 25px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+
+.food-menu__title {
+  padding: 12px 0 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  span {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+    &:before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      background: rgba(#000,.3);
+    }
+    &:after {
+      content: "";
+      width: 34px;
+      height: 1px;
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      background: rgba(#000,.3);
+    }
+  }
+}
+.food-menu__list {
+  //margin-top: 20px;
+  li {
+    margin-top: 20px;
+    &:first-child {
+      //margin-top: 0;
+    }
+  }
+}
+.food-menu__item {
+  position: relative;
+  .cover {
+    height: 265px;
+  }
+  .food-menu__tag {
+    position: absolute;
+
+    top: -11px
+  }
+  .food-menu__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: 68px;
+    background: rgba(#000,.6);
+    color: #fff;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    .text {
+      font-weight: bold;
+    }
+    .iconfont {
+      font-size: 14px;
+    }
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 19px;
+    .text {
+      margin-right: 5px;
+    }
+  }
+  .taste {
+    display: flex;
+    align-items: center;
+  }
+}
+.food-menu__tag {
+  display: flex;
+  align-items: center;
+  width: 88px;
+  height: 29px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #fff;
+  background: url("../images/food-menu__tag.png") no-repeat;
+  background-size: cover;
+  .iconfont {
+    margin-right: 3px;
+    font-size: 12px;
+  }
+}
+.cover {
+  background: linear-gradient(to top, rgb(253, 219, 146) 0%, rgb(209, 253, 255) 100%) no-repeat center;
+  background-size: cover;
+}
+
+.food-menu__panel {
+  margin: 0 -5px;
+  .food-menu__title {
+    padding-top: 20px;
+  }
+  .food-menu__list {
+    li {
+      float: left;
+      width: 33.33%;
+      padding: 0 5px;
+    }
+  }
+  .food-menu__item {
+    .cover {
+      height: 90px;
+    }
+    .name {
+      display: block;
+      font-size: 16px;
+      padding: 5px 5px 0;
+    }
+    .price {
+      padding-left: 5px;
+      margin-top: 0px;
+      font-size: 10px;
+    }
+    .food-menu__bottom {
+      position: relative;
+      height: 50px;
+      display: block;
+      background: #fff;
+      color: #333;
+    }
+    .food-menu__tag {
+      width: 70.4px;
+      height:22.4px;
+      font-size: 10px;
+      .iconfont {
+        font-size: 10px;
+      }
+    }
+    .taste {
+      position: absolute;
+      right: 5px;
+      .tag-spicy {
+        width: 9px;
+        height: 12px;
+      }
+      .tag-zan {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}
