@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--底部按钮-->
+<div class="bottomBtn">
+	<a class="btn btn-instructions" href="javascript:layer.show('.instructions-wrap')"></a>
+	<a class="btn btn-record" href="javascript:layer.show('.record-wrap')"></a>
+</div>
+<!--滑动-->
+<div class="s-slide">
+	<img src="images/slide.png" alt="">
+</div>
+<!--打开后-->
+<div class="s-open">
+	<img src="images/open.png"/>
+</div>
+<!--红包-->
+<div class="shadow redPacket-wrap">
+	<div class="redPacket">
+		<div class="open"></div>
+		<div class="gold"></div>
+		<div class="before"></div>
+		<div class="text">
+			<div class="money">
+				¥8.88<span>元</span>
+			</div>
+			<img src="images/moneyTips.png"/>
+		</div>
+	</div>
+	<a class="btn_return" href="javascript:layer.hide('.redPacket-wrap')"></a>
+</div>
+<!--红包-->
+<div class="shadow instructions-wrap">
+	<a class="btn_return" href="javascript:layer.hide('.instructions-wrap')"></a>
+</div>
+<!--中奖记录-->
+<div class="shadow record-wrap">
+	<div class="user">
+		<div class="avatar" style="background-image: url('images/04-38x67_02.jpg')"></div>
+		<span>昵称：喜力啤酒</span>
+	</div>
+	<div class="record">
+		<div class="inner">
+			<div class="top clearfix">
+				<div class="fl">获奖金额</div>
+				<div class="fr">获奖记录</div>
+			</div>
+			<ul>
+				<li class="clearfix">
+					<div  class="fl">微信红包1.28元</div>
+					<div  class="fr">2017/10/08</div>
+				</li>
+				<li class="clearfix">
+					<div  class="fl">微信红包1.28元</div>
+					<div  class="fr">2017/10/08</div>
+				</li>
+				<li class="clearfix">
+					<div  class="fl">微信红包1.28元</div>
+					<div  class="fr">2017/10/08</div>
+				</li><li class="clearfix">
+					<div  class="fl">微信红包1.28元</div>
+					<div  class="fr">2017/10/08</div>
+				</li>
+				<li class="clearfix">
+					<div  class="fl">微信红包1.28元</div>
+					<div  class="fr">2017/10/08</div>
+				</li><li class="clearfix">
+					<div  class="fl">微信红包1.28元</div>
+					<div  class="fr">2017/10/08</div>
+				</li>
+				<li class="clearfix">
+					<div  class="fl">微信红包1.28元</div>
+					<div  class="fr">2017/10/08</div>
+				</li>
+			</ul>
+			<div class="bottom">
+				<div>零钱</div>
+				<span>¥17.38</span>
+				<a class="btn_cash" href="javascript:layer.show('.cash-wrap')"></a>
+			</div>
+
+		</div>
+
+	</div>
+	<a class="btn_return" href="javascript:layer.hide('.record-wrap')"></a>
+</div>
+<!--提现-->
+<div class="shadow cash-wrap">
+	<div class="cash-bg">
+		<div class="inner">
+			<h3 class="text-green">提现金额</h3>
+			<div class="money">
+				<span class="icon1">￥</span>
+				<input class="moneyInput" type="text">
+			</div>
+			<div class="text">当前零钱余额为<span class="count">17.38</span>，<a class="text-green count-cash">全部提现</a></div>
+
+			<a class="btn_1" href="javascript:"><img src="images/btn1.png"/></a>
+		</div>
+	</div>
+	<a class="btn_return" href="javascript:layer.hide('.cash-wrap')"></a>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
